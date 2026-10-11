@@ -1,0 +1,24 @@
+{
+  "name": "expense-tracker-mern",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm --prefix backend run dev",
+    "dev:client": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "npm --prefix backend start",
+    "test": "npm --prefix backend test",
+    "install:all": "npm install && npm --prefix backend install"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {}
+}
